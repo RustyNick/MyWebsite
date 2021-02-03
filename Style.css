@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box
+}
+
+Body{
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    width:100vw;
+    margin:auto;
+}
+
+.nav{
+    width:100vw;
+    height:50px;
+    background-color: bisque;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    position:absolute;
+}
+
+.navBox{
+    width:100%;
+    padding-top:1em;
+    background-color: blueviolet;
+    justify-content: center;
+    flex-wrap: 0, 1, 1;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.navBox:hover{
+    color:white;
+    opacity:0.5;
+    background-color:grey;
+
+}
