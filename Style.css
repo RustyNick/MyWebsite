@@ -19,15 +19,27 @@ main{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    position:absolute;
+    position:fixed;
+    flex-wrap: 0, 1, 1;
 }
 
 .navBox{
     width:100%;
-    padding-top:1em;
+    position: relative;
+    outline:0px;
     background-color: blueviolet;
+}
+
+.navbtn{
+    width:100%;
+    height:100%;
+    display:block;
+    position: relative;
+    font-size: 1em;
+    background-color: blueviolet;
+    outline-color:blueviolet;
+    border:0px;
     justify-content: center;
-    flex-wrap: 0, 1, 1;
     text-align: center;
     transition: 0.3s;
 }
@@ -35,6 +47,15 @@ main{
 .navBox:hover{
     color:white;
     opacity:0.5;
+    outline-color:greblueviolety;
     background-color:grey;
 
+}
+
+.wrapper{
+    padding-top:50px;
+    height:300px;
+    display:flex;
+    justify-content: center;
+    background-color: hotpink;
 }
