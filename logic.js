@@ -1,13 +1,25 @@
-/* function loadProducts() {
-    fetch("./info.json")
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(Info) {
-        listOfInfo = Info;
-        addProductsToWebpage();
-    });
-} */
+const boxlist = [
+    {
+        image: "Icon.PNG",
+        hobby:"Twitch",
+        Desc: "hava a great instrest in Streaming, mainly on the gaming side. Love the studio feeling of broadcasting and just hav fun with friends",
+        page: "My Twitch",
+        link: "https://www.twitch.tv/jakkenblue"
+    },
+    {
+        image: "furry72dpi.png",
+        hobby:"furry",
+        Desc: "text i wrote",
+        
+    },
+    {
+        image: "theCouch.PNG",
+        hobby:"Hildebrandt",
+        Desc:"someone",
+       
+    },
+
+];
 
 window.addEventListener("load",initsite)
 
@@ -43,7 +55,7 @@ function betaPage(){
     alpha.style.display = "None";
     beta.style.display = "block";
     gamma.style.display = "None";
-    renderbetaContent()
+    loopbox()
 }
 
 function gammaPage(){
@@ -52,6 +64,16 @@ function gammaPage(){
     beta.style.display = "None";
     gamma.style.display = "block";
     rendergammaContent()
+
+}
+
+function loopbox(){
+
+    for (let i = 0; i < boxlist.length; i++) {
+        let divBox = boxlist[i];
+        divBox.innerText = JSON.stringify(boxlist[i].hobby);
+        document.getElementById("beta").append(renderbetaContent(i))
+    }   
 
 }
 
@@ -102,21 +124,45 @@ function renderalphaContent(){
     document.getElementById("alpha").appendChild(renderCard);
 }
 
-function renderbetaContent(){
+function renderbetaContent(i){
     let renderCard = document.createElement("div");
     renderCard.className = "renderCard";
 
-    let infoBox = document.createElement("div")
-    infoBox.className = "infoBox"
+    let image = document.createElement("img")
+    image.className = "img"
+    image.innerText = boxlist[i].image;
 
-    let infoText = document.createElement("p")
-    infoText.className = "infoText"
-    infoText.innerText = "BETA Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rerum vel, temporibus sunt aspernatur perspiciatis tempora quisquam nisi libero necessitatibus tempore, nemo recusandae commodi dolorum repellendus. Debitis recusandae atque exercitationem?"
+    let imageURL = boxlist[i].image
+    image.src = ("/assets/" +imageURL);
 
-    infoBox.appendChild(infoText);
-    renderCard.appendChild(infoBox);
+    let title = document.createElement("h3")
+    title.id="title"
+    title.innerText= boxlist[i].hobby
+
+    let newBox = document.createElement("div")
+    newBox.id = "newBox"
+    newBox.innerText = boxlist[i].Desc;
+
+    
+    let goTobtn = document.createElement("button")
+    goTobtn.innerText = boxlist[i].page;
+    goTobtn.addEventListener("click",function() {
+        window.location.href = boxlist[i].link;
+      }); 
+
+    renderCard.append(image)
+    renderCard.append(title)
+    renderCard.append(newBox)
+
+    if(!boxlist[i].link){
+        goTobtn.innerText = ""
+    }else{
+        renderCard.append(goTobtn)   
+    }
     document.getElementById("beta").appendChild(renderCard);
+    return renderCard
 }
+
 
 function rendergammaContent(){
     let renderCard = document.createElement("div");
