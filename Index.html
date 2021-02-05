@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script defer src="logic.js"></script>
+    <script defer type="text/javascript" src="info.json"></script>
+    <script defer type="text/javascript" src="logic.js"></script>
 
     <title>Document</title>
 </head>
 <body>
     <main>
+    <header>
         <div class="nav">
             <div class="navBox"><button id="alpbtn" class="navbtn">Alpha</button></div>
             <div class="navBox"><button id="betbtn"  class="navbtn">Beta</button></div>
             <div class="navBox"><button id="gambtn" class="navbtn">Gamma</button></div>
         </div>
-
+    </header>
         <div class="wrapper">
-            <div id="alpha">First site</div>
+            <div id="alpha" class="aContainer"><ul id="menu"></ul></div>
             <div id="beta">Second Site</div>
             <div id="gamma">Third site</div>
         </div>

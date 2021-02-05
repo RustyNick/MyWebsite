@@ -9,11 +9,10 @@ Body{
 
 main{
     width:100vw;
-    margin:auto;
 }
 
 .nav{
-    width:100vw;
+    width:100%;
     height:50px;
     background-color: bisque;
     display:flex;
@@ -24,7 +23,8 @@ main{
 }
 
 .navBox{
-    width:100%;
+    width:45%;
+    float: left;
     position: relative;
     outline:0px;
     background-color: blueviolet;
@@ -47,15 +47,43 @@ main{
 .navBox:hover{
     color:white;
     opacity:0.5;
-    outline-color:greblueviolety;
-    background-color:grey;
+    outline-color:blueviolet;
+    background-color:blueviolet;
 
 }
 
 .wrapper{
     padding-top:50px;
-    height:300px;
     display:flex;
+    flex-direction: row;
     justify-content: center;
     background-color: hotpink;
+}
+.aContainer{
+    max-width:600px;
+    padding:10px;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.renderCard{
+    width:100%;
+    min-width:200px;
+    background-color: whitesmoke;
+    margin-bottom:10px;
+    padding: 10px 15px 10px 15px;
+}
+
+#pfp{
+    
+}
+#image{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+#fullName{
+    width:100%;
+    text-align: left;
 }
