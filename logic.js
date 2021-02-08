@@ -32,7 +32,7 @@ const aboutMe = [
 
 const boxlist = [
     {
-        image: "ICON.PNG",
+        image: "icon.png",
         hobby:"Twitch - JakkenBlue",
         Desc: "hava a great instrest in Streaming, mainly on the gaming side. Love the studio feeling of broadcasting and just have fun with friends. ",
         page: "My Twitch",
