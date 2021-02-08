@@ -68,7 +68,7 @@ main{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #346b8a;
+    background-color: #364e5c;
 }
 .aContainer{
     max-width:600px;
