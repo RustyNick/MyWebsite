@@ -68,7 +68,7 @@ main{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #172126;
+    background-color: #346b8a;
 }
 .aContainer{
     max-width:600px;
@@ -178,5 +178,5 @@ main{
 footer{
     text-align: center;
     padding:10px;
-    background-color: #172126;
+    background-color: #346b8a;
 }
