@@ -16,6 +16,8 @@ main{
     height:100%;
 }
 
+
+
 .nav{
     width:100%;
     height:50px;
@@ -32,7 +34,6 @@ main{
     float: left;
     position: relative;
     outline:0px;
-    background-color: blueviolet;
 }
 
 .navbtn{
@@ -41,19 +42,20 @@ main{
     display:block;
     position: relative;
     font-size: 1em;
-    background-color: blueviolet;
-    outline-color:blueviolet;
+    color:whitesmoke;
+    background-color: #00A2FF;
+    outline-color:#00A2FF;
     border:0px;
     justify-content: center;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
-.navBox:hover{
-    color:white;
-    opacity:0.5;
-    outline-color:blueviolet;
-    background-color:blueviolet;
+.navbtn:hover{
+    font-weight: bold;
+    color:black;
+    background-color:grey;
+    opacity:0.7;
 
 }
 
@@ -69,8 +71,8 @@ main{
     max-width:600px;
     padding:10px;
     display:flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
 
 }
 
@@ -81,8 +83,16 @@ main{
     flex-direction: column;
 
 }
+.cContainer{
+    max-width:600px;
+    padding:10px;
+    display:flex;
+    flex-direction: row;
+    justify-self: center;
+
+}
 .renderCard{
-    width:100%;
+    /* width:100%; */
     background-color: whitesmoke;
     margin-bottom:10px;
     padding: 10px 15px 10px 15px;
@@ -106,4 +116,34 @@ main{
 #newBox{
     max-width:600px;
     padding:10px;
+}
+
+#flexdiv{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.stylebox{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn{
+    width:100%;
+    min-width:200px;
+    height:50px;
+    position:relative;
+    color:whitesmoke;
+    background-color: #00A2FF;
+    outline-color:#00A2FF;
+    font-size:20px;
+    border:0px;
+    transition: 0.5s;
+
+}
+.btn:hover{
+    background-color: grey;
+    opacity: 0.7;
+
 }
