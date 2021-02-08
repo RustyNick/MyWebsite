@@ -9,6 +9,7 @@ Body{
 
 main{
     width:100vw;
+    min-height:100vh;
 }
 
 .img{
@@ -20,7 +21,8 @@ main{
 
 .nav{
     width:100%;
-    height:50px;
+    height:70px;
+    z-index:1;
     background-color: bisque;
     display:flex;
     flex-direction: row;
@@ -61,15 +63,16 @@ main{
 
 .wrapper{
     height:100%;
+    padding:20px;
     padding-top:50px;
     display:flex;
     flex-direction: row;
     justify-content: center;
-    background-color: hotpink;
+    background-color: #172126;
 }
 .aContainer{
     max-width:600px;
-    padding:10px;
+    padding-top:50px;
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -78,24 +81,26 @@ main{
 
 .bContainer{
     max-width:600px;
-    padding:10px;
+    padding-top:50px;
     display:flex;
     flex-direction: column;
 
 }
 .cContainer{
     max-width:600px;
+    min-height:100vh;
     padding:10px;
+    padding-top:50px;
     display:flex;
     flex-direction: row;
     justify-self: center;
 
 }
 .renderCard{
-    /* width:100%; */
+    width:100%;
     background-color: whitesmoke;
-    margin-bottom:10px;
-    padding: 10px 15px 10px 15px;
+    margin-bottom:20px;
+    padding: 10px;
     overflow:hidden;
 }
 
@@ -125,10 +130,10 @@ main{
 
 .stylebox{
     display:flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content:center;
+    text-align: center;
 }
-
 .btn{
     width:100%;
     min-width:200px;
@@ -142,8 +147,39 @@ main{
     transition: 0.5s;
 
 }
+
 .btn:hover{
     background-color: grey;
     opacity: 0.7;
 
+}
+
+#topbtn{
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #00A2FF;
+    text-decoration: none;
+    opacity: 0.7; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px;
+    transition: 0.4;
+}
+
+#topbtn:hover{
+    background-color: #00A2FF;
+    opacity: 1; 
+}
+
+footer{
+    text-align: center;
+    padding:10px;
+    background-color: #172126;
 }

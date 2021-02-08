@@ -33,29 +33,35 @@ const aboutMe = [
 const boxlist = [
     {
         image: "Icon.PNG",
-        hobby:"Twitch",
-        Desc: "hava a great instrest in Streaming, mainly on the gaming side. Love the studio feeling of broadcasting and just hav fun with friends",
+        hobby:"Twitch - JakkenBlue",
+        Desc: "hava a great instrest in Streaming, mainly on the gaming side. Love the studio feeling of broadcasting and just have fun with friends. ",
         page: "My Twitch",
         link: "https://www.twitch.tv/jakkenblue"
     },
     {
         image: "furry72dpi.png",
         hobby:"Arts",
-        Desc: "I'm drawing a little when the mood strikes me, I usually draw anthromorpich characters and some fantasy creature",
+        Desc: "I'm drawing a little when the mood strikes me, I usually draw anthromorpich characters and some fantasy creature, ",
         
     },
     {
         image: "theCouch.PNG",
-        hobby:"Discord",
-        Desc:"someone",
+        hobby:"Discord - The Couch",
+        Desc:"I maintain a discord Server where my twitch community can turn to chat and mingle yet it's main goal is to make a plattform for smaller streamers to make contcts and friends to be able to have a ground to work on projects together.",
+       
+    },{
+        image: "",
+        hobby:"Games",
+        Desc:"If you haven't figured it out yet I like games, I'm more focused on platforming games like your casual mario or puzzle solving Zelda yet we can't just forget Minecraft, I've spent to many hours on that game than I like to admit.",
        
     },
+    
 
 ];
 
 const contactlist = [
     {
-        medie:"Send me a E-mail",
+        medie:"Send me an E-mail",
         contact:"e-mail",
         desc:"",
         link: "mailto: niklas.hadell@medieinstitutet.se"
@@ -72,6 +78,21 @@ const contactlist = [
         desc:"",
         link:"https://www.twitch.tv/jakkenblue"
     },
+    {
+        medie:"DM me on Twitter",
+        contact:"DM me on Twitter",
+        desc:"",
+        link:"https://twitter.com/JakkenBlue"
+    },{
+        medie:"Join our discord",
+        contact:"Join our Discord",
+        desc:"",
+        link:""
+    },
+    {
+        
+        desc:"Feel free to contact me an I shall respond to you as soon as I can",
+    },
 ]
 
 window.addEventListener("load",initsite)
@@ -79,6 +100,24 @@ window.addEventListener("load",initsite)
 document.getElementById("alpbtn").addEventListener("click", AlphaPage)
 document.getElementById("betbtn").addEventListener("click", betaPage)
 document.getElementById("gambtn").addEventListener("click", gammaPage)
+document.getElementById("topbtn").addEventListener("click", topfunction)
+window.onscroll = function() {scroll()};
+
+backTop = document.getElementById("")
+
+function scroll(){
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topbtn.style.display = "block";
+      } else {
+        topbtn.style.display = "none";
+      }
+}
+
+function topfunction(){
+    document.body.scrollTop =0;
+    document.documentElement.scrollTop = 0;
+}
+
 
 function initsite(){
     AlphaPage()
@@ -92,6 +131,8 @@ function initsite(){
         document.getElementById("main").appendChild(createProductCard(i))
     }
 } */
+
+
 
 function restorePage(){
     document.getElementById("gamma").innerText = ""
@@ -164,13 +205,24 @@ function renderPfpCard(){
     image.id = "image"
     image.src="assets/profilepicture.jpg"
 
+    let stylebox = document.createElement("div")
+    stylebox.className ="stylebox"
+
+
     let fullName = document.createElement("p");
     fullName.id = "fullName";
+    fullName.style.width="30%"
     fullName.innerText = "Niklas Hådell"
+
+    let age = document.createElement("p");
+    age.id = "age";
+    age.style.width="30%"
+    age.innerText = "1994-04-14"
 
     let list = document.createElement("p");
     list.id = "list";
-    list.innerText = "Future webb Developer"
+    list.style.width="30%"
+    list.innerText = "Future Webb Developer"
 
     let alphabtn = document.createElement("button")
     alphabtn.className ="btn"
@@ -182,8 +234,10 @@ function renderPfpCard(){
     pfp.appendChild(image);
     
     renderCard.appendChild(pfp);
-    renderCard.appendChild(fullName);
-    renderCard.appendChild(list);
+    stylebox.appendChild(fullName);
+    stylebox.appendChild(age)
+    stylebox.appendChild(list);
+    renderCard.appendChild(stylebox)
     renderCard.appendChild(alphabtn);
 
 
@@ -283,7 +337,8 @@ function rendergammaContent(i){
 
     let infoText = document.createElement("div")
     infoText.className = "infoText"
-    infoText.innerText = contactlist[1].desc;
+    infoText.innerText = contactlist[i].desc;
+    infoText.style.fontSize = "20px"
 
     let contactbtn = document.createElement("button");
     contactbtn.className = "btn"
@@ -292,11 +347,19 @@ function rendergammaContent(i){
         window.location.href = contactlist[i].link;
       }); 
 
+    if(!contactlist[i].link){
+        contactbtn.style.display = "none"
+        
+    }else{
+        stylebox.append(contactbtn)   
+    }
     
+
+    stylebox.append(contactbtn)
     infoBox.append(infoText);
     stylebox.append(infoBox)
-    stylebox.append(contactbtn)
     renderCard.appendChild(stylebox);
     document.getElementById("gamma").appendChild(renderCard);
+
     return renderCard
 }
