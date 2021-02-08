@@ -21,12 +21,12 @@ const aboutMe = [
     {
         title:"Manpower Ab",
         year:"year",
-        worked:"ambulated warehouse worker, specilised in Pick and Pack"
+        worked:"Ambulated warehouse worker, specialized in Pick and Pack"
     },
     {
         title:"Transcom Ab",
         year:"year",
-        worked:"customer service, firstline for telecom"
+        worked:"Customer service, firstline for telecom"
     }
 ];
 
