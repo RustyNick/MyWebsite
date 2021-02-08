@@ -1,3 +1,35 @@
+const aboutMe = [
+    {
+        title:"About",
+        worked:"I have earlier studied Graphic design and social media, due to change of career I’ve been into both customer service and warehouse worker with designated assignments of support. Now I’m looking forward and found webb development as a high interest since it both involve design elements and creative building. As a future developer I would like to be the team inspirer to help fellow colleagues find solid solutions for our works and creations."
+    },
+    {
+        title:"MedieInstitutet",
+        year:"Now",
+        worked:"Student"
+    },
+    {
+        title:"FristadsAB",
+        year:"2019",
+        worked:"Worked as a Value Added Service (VAS) operator with supporting assignments"
+    },
+    {
+        title:"Speed AB",
+        year:"2018",
+        worked:"Warehouse worker, specilised in Pick and pack."
+    },
+    {
+        title:"Manpower Ab",
+        year:"year",
+        worked:"ambulated warehouse worker, specilised in Pick and Pack"
+    },
+    {
+        title:"Transcom Ab",
+        year:"year",
+        worked:"customer service, firstline for telecom"
+    }
+];
+
 const boxlist = [
     {
         image: "Icon.PNG",
@@ -8,18 +40,39 @@ const boxlist = [
     },
     {
         image: "furry72dpi.png",
-        hobby:"furry",
-        Desc: "text i wrote",
+        hobby:"Arts",
+        Desc: "I'm drawing a little when the mood strikes me, I usually draw anthromorpich characters and some fantasy creature",
         
     },
     {
         image: "theCouch.PNG",
-        hobby:"Hildebrandt",
+        hobby:"Discord",
         Desc:"someone",
        
     },
 
 ];
+
+const contactlist = [
+    {
+        medie:"Send me a E-mail",
+        contact:"e-mail",
+        desc:"",
+        link: "mailto: niklas.hadell@medieinstitutet.se"
+    },
+    {
+        medie: "Add me on linkedIn",
+        contact:"Linkedin",
+        desc:"",
+        link: "https://www.linkedin.com/in/niklas-hådell-51b767201"
+    },
+    {
+        medie:"Whisper me on twitch",
+        contact:"whisper in twitch",
+        desc:"",
+        link:"https://www.twitch.tv/jakkenblue"
+    },
+]
 
 window.addEventListener("load",initsite)
 
@@ -40,42 +93,65 @@ function initsite(){
     }
 } */
 
-function AlphaPage(){
+function restorePage(){
+    document.getElementById("gamma").innerText = ""
+    document.getElementById("beta").innerText = ""
     document.getElementById("alpha").innerText = ""
+}
+
+function AlphaPage(){
+    restorePage()
     alpha.style.display = "block";
     beta.style.display = "None";
     gamma.style.display = "None";
     renderPfpCard()
-    renderalphaContent()
+    loopaalphabox()
 
 }
 
 function betaPage(){
-    document.getElementById("beta").innerText = ""
+    restorePage()
     alpha.style.display = "None";
     beta.style.display = "block";
     gamma.style.display = "None";
-    loopbox()
+    loopbetabox()
 }
 
 function gammaPage(){
-    document.getElementById("gamma").innerText = ""
+    restorePage()
     alpha.style.display = "None";
     beta.style.display = "None";
     gamma.style.display = "block";
-    rendergammaContent()
+    loopgammabox()
 
 }
 
-function loopbox(){
+function loopaalphabox(){
+    for (let i = 0; i < aboutMe.length; i++) {
+        let divBox = aboutMe[i];
+        divBox.innerText = JSON.stringify(aboutMe[i]);
+        document.getElementById("alpha").append(renderalphaContent(i))
+    }   
+}
+function loopbetabox(){
 
     for (let i = 0; i < boxlist.length; i++) {
         let divBox = boxlist[i];
-        divBox.innerText = JSON.stringify(boxlist[i].hobby);
+        divBox.innerText = JSON.stringify(boxlist[i]);
         document.getElementById("beta").append(renderbetaContent(i))
+    }  
+}
+
+function loopgammabox(){
+
+    for (let i = 0; i < contactlist.length; i++) {
+        let conbox = contactlist[i];
+        conbox.innerText = JSON.stringify(contactlist[i]);
+        document.getElementById("gamma").append(rendergammaContent(i))
     }   
 
 }
+
 
 function renderPfpCard(){
     let renderCard = document.createElement("div");
@@ -96,32 +172,61 @@ function renderPfpCard(){
     list.id = "list";
     list.innerText = "Future webb Developer"
 
+    let alphabtn = document.createElement("button")
+    alphabtn.className ="btn"
+    alphabtn.innerText ="Contact"
+    alphabtn.addEventListener("click",function() {
+        gammaPage()
+      }); 
+
     pfp.appendChild(image);
     
     renderCard.appendChild(pfp);
     renderCard.appendChild(fullName);
     renderCard.appendChild(list);
+    renderCard.appendChild(alphabtn);
 
 
     document.getElementById("alpha").appendChild(renderCard);
 }
 
-function renderalphaContent(){
+function renderalphaContent(i){
+    
+
     let renderCard = document.createElement("div");
     renderCard.className = "renderCard";
+
 
     let infoBox = document.createElement("div")
     infoBox.id = "infoBox"
 
+    let title = document.createElement("h3")
+    title.style.marginBottom ="0px"
+    title.innerText =aboutMe[i].title;
+
+    let year = document.createElement("h5")
+    year.style.margin ="0px"
+    year.style.paddin ="0px"
+    year.innerText =aboutMe[i].year;
+
     let infoText = document.createElement("p")
     infoText.id = "infoText"
-    infoText.innerText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rerum vel, temporibus sunt aspernatur perspiciatis tempora quisquam nisi libero necessitatibus tempore, nemo recusandae commodi dolorum repellendus. Debitis recusandae atque exercitationem?"
-
-    infoBox.appendChild(infoText);
-    infoBox.appendChild(infoText);
+    infoText.innerText = aboutMe[i].worked;
+    
+    
+    infoBox.appendChild(title)
+    infoBox.appendChild(year)
     infoBox.appendChild(infoText);
     renderCard.appendChild(infoBox);
     document.getElementById("alpha").appendChild(renderCard);
+
+    if(!aboutMe[i].year){
+        year.innerText ="";
+    }else{
+        year.innerText =aboutMe[i].year;
+    }
+
+    return renderCard
 }
 
 function renderbetaContent(i){
@@ -145,6 +250,7 @@ function renderbetaContent(i){
 
     
     let goTobtn = document.createElement("button")
+    goTobtn.className ="btn"
     goTobtn.innerText = boxlist[i].page;
     goTobtn.addEventListener("click",function() {
         window.location.href = boxlist[i].link;
@@ -164,18 +270,33 @@ function renderbetaContent(i){
 }
 
 
-function rendergammaContent(){
+function rendergammaContent(i){
     let renderCard = document.createElement("div");
     renderCard.className = "renderCard";
+
+    let stylebox = document.createElement("div")
+    stylebox.className = "stylebox"
 
     let infoBox = document.createElement("div")
     infoBox.className = "infoBox"
 
-    let infoText = document.createElement("p")
-    infoText.className = "infoText"
-    infoText.innerText = "GAMMA Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rerum vel, temporibus sunt aspernatur perspiciatis tempora quisquam nisi libero necessitatibus tempore, nemo recusandae commodi dolorum repellendus. Debitis recusandae atque exercitationem?"
 
-    infoBox.appendChild(infoText);
-    renderCard.appendChild(infoBox);
+    let infoText = document.createElement("div")
+    infoText.className = "infoText"
+    infoText.innerText = contactlist[1].desc;
+
+    let contactbtn = document.createElement("button");
+    contactbtn.className = "btn"
+    contactbtn.innerText = contactlist[i].medie;
+    contactbtn.addEventListener("click",function() {
+        window.location.href = contactlist[i].link;
+      }); 
+
+    
+    infoBox.append(infoText);
+    stylebox.append(infoBox)
+    stylebox.append(contactbtn)
+    renderCard.appendChild(stylebox);
     document.getElementById("gamma").appendChild(renderCard);
+    return renderCard
 }
