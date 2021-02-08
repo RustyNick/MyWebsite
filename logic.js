@@ -32,20 +32,20 @@ const aboutMe = [
 
 const boxlist = [
     {
-        image: "https://rustynick.github.io/myWebsite/img/Icon.PNG",
+        image: "Icon.PNG",
         hobby:"Twitch - JakkenBlue",
         Desc: "hava a great instrest in Streaming, mainly on the gaming side. Love the studio feeling of broadcasting and just have fun with friends. ",
         page: "My Twitch",
         link: "https://www.twitch.tv/jakkenblue"
     },
     {
-        image: "https://rustynick.github.io/myWebsite/img/furry72dpi.png",
+        image: "furry72dpi.png",
         hobby:"Arts",
         Desc: "I'm drawing a little when the mood strikes me, I usually draw anthromorpich characters and some fantasy creature, ",
         
     },
     {
-        image: "https://rustynick.github.io/myWebsite/img/theCouch.PNG",
+        image: "theCouch.PNG",
         hobby:"Discord - The Couch",
         Desc:"I maintain a discord Server where my twitch community can turn to chat and mingle yet it's main goal is to make a plattform for smaller streamers to make contcts and friends to be able to have a ground to work on projects together.",
        
@@ -292,7 +292,7 @@ function renderbetaContent(i){
     image.innerText = boxlist[i].image;
 
     let imageURL = boxlist[i].image
-    image.src = ("/assets/" +imageURL);
+    image.src = ("https://rustynick.github.io/myWebsite/assets/" +imageURL);
 
     let title = document.createElement("h3")
     title.id="title"
