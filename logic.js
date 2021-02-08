@@ -292,7 +292,7 @@ function renderbetaContent(i){
     image.innerText = boxlist[i].image;
 
     let imageURL = boxlist[i].image
-    image.src = ("https://rustynick.github.io/myWebsite/assets/" +imageURL);
+    image.src = ("https://rustynick.github.io/MyWebsite/assets/" +imageURL);
 
     let title = document.createElement("h3")
     title.id="title"
