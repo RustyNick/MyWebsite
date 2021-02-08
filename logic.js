@@ -222,7 +222,7 @@ function renderPfpCard(){
     let list = document.createElement("p");
     list.id = "list";
     list.style.width="30%"
-    list.innerText = "Future Webb Developer"
+    list.innerText = "Future Web Developer"
 
     let alphabtn = document.createElement("button")
     alphabtn.className ="btn"
