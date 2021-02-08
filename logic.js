@@ -32,7 +32,7 @@ const aboutMe = [
 
 const boxlist = [
     {
-        image: "Icon.PNG",
+        image: "ICON.PNG",
         hobby:"Twitch - JakkenBlue",
         Desc: "hava a great instrest in Streaming, mainly on the gaming side. Love the studio feeling of broadcasting and just have fun with friends. ",
         page: "My Twitch",
@@ -45,7 +45,7 @@ const boxlist = [
         
     },
     {
-        image: "theCouch.PNG",
+        image: "theCouch.png",
         hobby:"Discord - The Couch",
         Desc:"I maintain a discord Server where my twitch community can turn to chat and mingle yet it's main goal is to make a plattform for smaller streamers to make contcts and friends to be able to have a ground to work on projects together.",
        
