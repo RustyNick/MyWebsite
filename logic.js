@@ -87,7 +87,7 @@ const contactlist = [
         medie:"Join our discord",
         contact:"Join our Discord",
         desc:"",
-        link:""
+        link:"https://discord.com/invite/zRx28HY7vH"
     },
     {
         
