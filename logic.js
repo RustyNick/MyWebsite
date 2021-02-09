@@ -5,72 +5,90 @@ const aboutMe = [
     },
     {
         title:"MedieInstitutet",
-        year:"Now",
-        worked:"Student"
+        year:"Curren",
+        worked:"With the studies of MedieInstitutet I'll learn build up my skills of web development and learning how to approuch projects and something at their core is Life long learning."
     },
     {
         title:"FristadsAB",
-        year:"2019",
-        worked:"Worked as a Value Added Service (VAS) operator with supporting assignments"
+        year:"2018 And forward",
+        worked:"Worked as a Value Added Service (VAS) operator with supporting assignments. as of right now it's a part time job"
     },
     {
-        title:"Speed AB",
-        year:"2018",
-        worked:"Warehouse worker, specilised in Pick and pack."
+        title:"Speed Competence AB",
+        year:"2017",
+        worked:"Warehouse worker, specilised in Pick and pack.I've been place at brands such like Fristads, Cellbes/Haléns, Hemtext and Ellos"
     },
     {
         title:"Manpower Ab",
-        year:"year",
-        worked:"Ambulated warehouse worker, specialized in Pick and Pack"
+        year:"2015 & 2016",
+        worked:"Ambulated warehouse worker, specialized in Pick and Pack. I've been place at brands such like Cellbes/Haléns"
     },
     {
         title:"Transcom Ab",
-        year:"year",
-        worked:"Customer service, firstline for telecom"
-    }
+        year:"2015",
+        worked:"Customer service, firstline for telecom, helping customers with their prepaid and subscription and some technical help with smartphones"
+    },
 ];
 
 const boxlist = [
     {
-        image: "icon.png",
+        image:"",
+        hobby:"Github project - F4B",
+        Desc: "This is the third group project I'm currenly working on with other fellow students, stay tune for more infromation!",
+        page: "github",
+        link: "https://github.com/FredrikLjungqvist/F4B"
+    },
+    {
+        image:"icon.png",
         hobby:"Twitch - JakkenBlue",
         Desc: "hava a great instrest in Streaming, mainly on the gaming side. Love the studio feeling of broadcasting and just have fun with friends. ",
         page: "My Twitch",
         link: "https://www.twitch.tv/jakkenblue"
     },
     {
-        image: "furry72dpi.png",
+        image:"furry72dpi.png",
         hobby:"Arts",
         Desc: "I'm drawing a little when the mood strikes me, I usually draw anthromorpich characters and some fantasy creature, ",
         
     },
     {
-        image: "theCouch.png",
+        image:"theCouch.png",
         hobby:"Discord - The Couch",
         Desc:"I maintain a discord Server where my twitch community can turn to chat and mingle yet it's main goal is to make a plattform for smaller streamers to make contcts and friends to be able to have a ground to work on projects together.",
        
     },{
-        image: "",
+        image:"gaming.png",
         hobby:"Games",
         Desc:"If you haven't figured it out yet I like games, I'm more focused on platforming games like your casual mario or puzzle solving Zelda yet we can't just forget Minecraft, I've spent to many hours on that game than I like to admit.",
        
     },
     {
-        image: "lextex.jpeg",
+        image:"lextex.jpeg",
         hobby:"Cats",
-        Desc:"If you haven't figured it out yet I like games, I'm more focused on platforming games like your casual mario or puzzle solving Zelda yet we can't just forget Minecraft, I've spent to many hours on that game than I like to admit.",
+        Desc:"I live togeher with my spouse and two very special, quite demanding yet also the best cuddly cats, Lexus and Texas and great personalities and they also can sit nicely before dinner...aside from all the meowing of course",
        
     },{
-        image: "desert.jpeg",
+        image:"desert.jpeg",
         hobby:"Deserts",
-        Desc:"If you haven't figured it out yet I like games, I'm more focused on platforming games like your casual mario or puzzle solving Zelda yet we can't just forget Minecraft, I've spent to many hours on that game than I like to admit.",
+        Desc:"Who dosen't like a realxed moment with a great cup of coffee and a nice pastary. The very famous word fika do i live to the core, nothing beat a great fika in the afternoon. It's a great moment to just sit back and let the mind release some steam, even better with some great company.",
        
     },{
-        image: "frog.jpeg",
+        image:"frog.png",
         hobby:"Photography",
-        Desc:"If you haven't figured it out yet I like games, I'm more focused on platforming games like your casual mario or puzzle solving Zelda yet we can't just forget Minecraft, I've spent to many hours on that game than I like to admit.",
+        Desc:"Since my camera on the phone turn out to be pretty great i've startet to fall down the slipper slope of photography. Yes photography is something I have picked up in the latter of years as a more of a hobby. I like the get those very special angles and just expirment how to make an intresting photo.",
        
-    },
+    },{
+        image:"profilprogramet.png",
+        hobby:"Grapich Design",
+        Desc:"Since my school year of gymnasiet (Similary to sweden high school) I've purse graphic design in university level yet I droped out since I kinde felt it wasn't the career path I was looking for it still remained as an important tool for every future project i approuch",
+       
+    },{
+        image:"",
+        hobby:"Github project - techStore",
+        Desc: "This was the first group assignemnt at MedieInstitutet. Me and a fellow student got the job to build our very first webshop for phones. Really exciting assignemnt and we learnd a lot by it.",
+        page: "github",
+        link: "https://github.com/FredrikLjungqvist/Techstore5"
+    }
 
 ];
 
@@ -103,6 +121,11 @@ const contactlist = [
         contact:"Join our Discord",
         desc:"",
         link:"https://discord.com/invite/zRx28HY7vH"
+    },{
+        medie:"My GitHub",
+        contact:"My GitHub",
+        desc:"",
+        link:"https://github.com/RustyNick"
     },
     {
         
