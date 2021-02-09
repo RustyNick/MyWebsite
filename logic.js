@@ -55,7 +55,22 @@ const boxlist = [
         Desc:"If you haven't figured it out yet I like games, I'm more focused on platforming games like your casual mario or puzzle solving Zelda yet we can't just forget Minecraft, I've spent to many hours on that game than I like to admit.",
        
     },
-    
+    {
+        image: "lextex.jpeg",
+        hobby:"Cats",
+        Desc:"If you haven't figured it out yet I like games, I'm more focused on platforming games like your casual mario or puzzle solving Zelda yet we can't just forget Minecraft, I've spent to many hours on that game than I like to admit.",
+       
+    },{
+        image: "desert.jpeg",
+        hobby:"Deserts",
+        Desc:"If you haven't figured it out yet I like games, I'm more focused on platforming games like your casual mario or puzzle solving Zelda yet we can't just forget Minecraft, I've spent to many hours on that game than I like to admit.",
+       
+    },{
+        image: "frog.jpeg",
+        hobby:"Photography",
+        Desc:"If you haven't figured it out yet I like games, I'm more focused on platforming games like your casual mario or puzzle solving Zelda yet we can't just forget Minecraft, I've spent to many hours on that game than I like to admit.",
+       
+    },
 
 ];
 
@@ -153,7 +168,7 @@ function AlphaPage(){
 function betaPage(){
     restorePage()
     alpha.style.display = "None";
-    beta.style.display = "block";
+    beta.style.display = "inline-block";
     gamma.style.display = "None";
     loopbetabox()
 }
@@ -248,7 +263,7 @@ function renderalphaContent(i){
     
 
     let renderCard = document.createElement("div");
-    renderCard.className = "renderCard";
+    renderCard.className ="renderCard"
 
 
     let infoBox = document.createElement("div")
@@ -286,6 +301,7 @@ function renderalphaContent(i){
 function renderbetaContent(i){
     let renderCard = document.createElement("div");
     renderCard.className = "renderCard";
+    renderCard.style.marginbottom ="20px"
 
     let image = document.createElement("img")
     image.className = "img"

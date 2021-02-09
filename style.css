@@ -74,17 +74,14 @@ main{
     max-width:600px;
     padding-top:50px;
     display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
 
 }
 
 .bContainer{
-    max-width:600px;
+    width:1200px;
     padding-top:50px;
     display:flex;
-    flex-direction: column;
-
+    overflow:hidden;
 }
 .cContainer{
     max-width:600px;
@@ -94,14 +91,13 @@ main{
     display:flex;
     flex-direction: row;
     justify-self: center;
-
 }
 .renderCard{
-    width:100%;
+    max-width:550px;
     background-color: whitesmoke;
-    margin-bottom:20px;
+    display:inline-block;
+    margin:10px;
     padding: 10px;
-    overflow:hidden;
 }
 
 #image{
@@ -140,6 +136,8 @@ main{
     background-color: #00A2FF;
     outline-color:#00A2FF;
     font-size:20px;
+    margin:0px;
+    padding:0px;
     border:0px;
     transition: 0.5s;
 
