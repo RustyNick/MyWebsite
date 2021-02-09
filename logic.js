@@ -32,7 +32,7 @@ const aboutMe = [
 
 const boxlist = [
     {
-        image:"",
+        image:"group.png",
         hobby:"Github project - F4B",
         Desc: "This is the third group project I'm currenly working on with other fellow students, stay tune for more infromation!",
         page: "github",
@@ -78,12 +78,12 @@ const boxlist = [
         Desc:"Since my camera on the phone turn out to be pretty great i've startet to fall down the slipper slope of photography. Yes photography is something I have picked up in the latter of years as a more of a hobby. I like the get those very special angles and just expirment how to make an intresting photo.",
        
     },{
-        image:"profilprogramet.png",
+        image:"profilprogramet.PNG",
         hobby:"Grapich Design",
         Desc:"Since my school year of gymnasiet (Similary to sweden high school) I've purse graphic design in university level yet I droped out since I kinde felt it wasn't the career path I was looking for it still remained as an important tool for every future project i approuch",
        
     },{
-        image:"",
+        image:"group.png",
         hobby:"Github project - techStore",
         Desc: "This was the first group assignemnt at MedieInstitutet. Me and a fellow student got the job to build our very first webshop for phones. Really exciting assignemnt and we learnd a lot by it.",
         page: "github",
