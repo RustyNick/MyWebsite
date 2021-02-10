@@ -2,6 +2,8 @@
     box-sizing: border-box
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 Body{
     padding: 0px;
     margin: 0px;
@@ -10,6 +12,7 @@ Body{
 main{
     width:100vw;
     min-height:100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 .img{
@@ -38,6 +41,8 @@ main{
     outline:0px;
 }
 
+
+
 .navbtn{
     width:100%;
     height:100%;
@@ -58,6 +63,7 @@ main{
     color:whitesmoke;
     background-color:grey;
     opacity:0.7;
+    cursor: pointer;
 
 }
 
@@ -68,7 +74,7 @@ main{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #364e5c;
+    background:linear-gradient(#364e5c,#6ba2c2) ;
 }
 .aContainer{
     max-width:600px;
@@ -78,10 +84,10 @@ main{
 }
 
 .bContainer{
-    width:1200px;
+    max-width:1200px;
     padding-top:50px;
     display:flex;
-    overflow:hidden;
+    justify-content: center;
 }
 .cContainer{
     max-width:600px;
@@ -144,6 +150,8 @@ main{
 .btn:hover{
     background-color: grey;
     opacity: 0.5;
+    outline:none;
+    cursor: pointer;
 
 }
 
@@ -174,5 +182,5 @@ main{
 footer{
     text-align: center;
     padding:10px;
-    background-color: #346b8a;
+    background-color: #6ba2c2;
 }
