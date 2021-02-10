@@ -5,7 +5,7 @@ const aboutMe = [
     },
     {
         title:"MedieInstitutet",
-        year:"Curren",
+        year:"Current",
         worked:"With the studies of MedieInstitutet I'll learn build up my skills of web development and learning how to approuch projects and something at their core is Life long learning."
     },
     {
@@ -28,6 +28,16 @@ const aboutMe = [
         year:"2015",
         worked:"Customer service, firstline for telecom, helping customers with their prepaid and subscription and some technical help with smartphones"
     },
+    {
+        title:"Högskolan Borås (University) Webbredaktör",
+        year:"2017-2018",
+        worked:"few of the Course:..."
+    },
+    {
+        title:"Högskolan dalarna (University) Grafisk design",
+        year:"2013-2014",
+        worked:"few of the Course: Grapgic Design & profilering, Fotografi & komposition, Typografi 1 & 2"
+    },
 ];
 
 const boxlist = [
@@ -46,17 +56,18 @@ const boxlist = [
         link: "https://www.twitch.tv/jakkenblue"
     },
     {
+        image:"theCouch.png",
+        hobby:"Discord - The Couch",
+        Desc:"I maintain a discord Server where my twitch community can turn to chat and mingle yet it's main goal is to make a plattform for smaller streamers to make contcts and friends to be able to have a ground to work on projects together.",
+       
+    },
+    {
         image:"furry72dpi.png",
         hobby:"Arts",
         Desc: "I'm drawing a little when the mood strikes me, I usually draw anthromorpich characters and some fantasy creature, ",
         
     },
     {
-        image:"theCouch.png",
-        hobby:"Discord - The Couch",
-        Desc:"I maintain a discord Server where my twitch community can turn to chat and mingle yet it's main goal is to make a plattform for smaller streamers to make contcts and friends to be able to have a ground to work on projects together.",
-       
-    },{
         image:"gaming.png",
         hobby:"Games",
         Desc:"If you haven't figured it out yet I like games, I'm more focused on platforming games like your casual mario or puzzle solving Zelda yet we can't just forget Minecraft, I've spent to many hours on that game than I like to admit.",
@@ -68,14 +79,14 @@ const boxlist = [
         Desc:"I live togeher with my spouse and two very special, quite demanding yet also the best cuddly cats, Lexus and Texas and great personalities and they also can sit nicely before dinner...aside from all the meowing of course",
        
     },{
-        image:"desert.jpeg",
-        hobby:"Deserts",
-        Desc:"Who dosen't like a realxed moment with a great cup of coffee and a nice pastary. The very famous word fika do i live to the core, nothing beat a great fika in the afternoon. It's a great moment to just sit back and let the mind release some steam, even better with some great company.",
-       
-    },{
         image:"frog.png",
         hobby:"Photography",
         Desc:"Since my camera on the phone turn out to be pretty great i've startet to fall down the slipper slope of photography. Yes photography is something I have picked up in the latter of years as a more of a hobby. I like the get those very special angles and just expirment how to make an intresting photo.",
+       
+    },{
+        image:"desert.jpeg",
+        hobby:"Deserts",
+        Desc:"Who dosen't like a realxed moment with a great cup of coffee and a nice pastary. The very famous word fika do i live to the core, nothing beat a great fika in the afternoon. It's a great moment to just sit back and let the mind release some steam, even better with some great company.",
        
     },{
         image:"profilprogramet.PNG",
@@ -138,10 +149,10 @@ window.addEventListener("load",initsite)
 document.getElementById("alpbtn").addEventListener("click", AlphaPage)
 document.getElementById("betbtn").addEventListener("click", betaPage)
 document.getElementById("gambtn").addEventListener("click", gammaPage)
-document.getElementById("topbtn").addEventListener("click", topfunction)
 window.onscroll = function() {scroll()};
 
 backTop = document.getElementById("")
+
 
 function scroll(){
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -151,9 +162,17 @@ function scroll(){
       }
 }
 
-function topfunction(){
-    document.body.scrollTop =0;
-    document.documentElement.scrollTop = 0;
+document.getElementById("topbtn").addEventListener("click", scrolltop) /* ()=>{window.scrollTo({
+    top:0,
+    behavior: "smooth"
+    })
+}); */
+
+function scrolltop(){window.scrollTo({
+    top:0,
+    behavior: "smooth"
+
+    });
 }
 
 
@@ -163,14 +182,6 @@ function initsite(){
 
 }
 
-/* function addProductsToWebpage(){
-    for (let i = 0; i < listOfInfo.length; i++) {
-        let info = listOfInfo[i];
-        document.getElementById("main").appendChild(createProductCard(i))
-    }
-} */
-
-
 
 function restorePage(){
     document.getElementById("gamma").innerText = ""
@@ -179,16 +190,19 @@ function restorePage(){
 }
 
 function AlphaPage(){
+    scrolltop()
     restorePage()
     alpha.style.display = "block";
     beta.style.display = "None";
     gamma.style.display = "None";
     renderPfpCard()
     loopaalphabox()
+    
 
 }
 
 function betaPage(){
+    scrolltop()
     restorePage()
     alpha.style.display = "None";
     beta.style.display = "inline-block";
@@ -197,6 +211,7 @@ function betaPage(){
 }
 
 function gammaPage(){
+    scrolltop()
     restorePage()
     alpha.style.display = "None";
     beta.style.display = "None";
