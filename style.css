@@ -69,7 +69,7 @@ main{
 
 .wrapper{
     height:100%;
-    padding:20px;
+    padding-right:20px;
     padding-top:50px;
     display:flex;
     flex-direction: row;
