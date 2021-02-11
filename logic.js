@@ -31,12 +31,12 @@ const aboutMe = [
     {
         title:"Högskolan Borås (University) Webbredaktör",
         year:"2017-2018",
-        worked:"few of the Course:..."
+        worked:"few of the Course: Bild & grafisk produktion, Content management"
     },
     {
         title:"Högskolan dalarna (University) Grafisk design",
         year:"2013-2014",
-        worked:"few of the Course: Grapgic Design & profilering, Fotografi & komposition, Typografi 1 & 2"
+        worked:"few of the Course: Grapgic Design & profilering, Fotografi & komposition, Typografi 1 & 2, Infromationsdesign"
     },
 ];
 
@@ -44,7 +44,7 @@ const boxlist = [
     {
         image:"group.png",
         hobby:"Github project - F4B",
-        Desc: "This is the third group project I'm currenly working on with other fellow students, stay tune for more infromation!",
+        Desc: "This is the third group project I'm currenly working on with other fellow students, stay tune for more infromation!,Tekniker för webbdesign",
         page: "github",
         link: "https://github.com/FredrikLjungqvist/F4B"
     },
