@@ -6,7 +6,7 @@ const aboutMe = [
     {
         title:"MedieInstitutet",
         year:"Current",
-        worked:"With the studies of MedieInstitutet I'll learn build up my skills of web development and learning how to approuch projects and something at their core is Life long learning."
+        worked:"With the studies of MedieInstitutet I'll learn build up my skills of web development and learning how to approach projects and something at their core is Life long learning."
     },
     {
         title:"FristadsAB",
