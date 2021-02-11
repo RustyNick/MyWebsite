@@ -31,7 +31,7 @@ const aboutMe = [
     {
         title:"Högskolan Borås (University) Webbredaktör",
         year:"2017-2018",
-        worked:"few of the Course: Bild & grafisk produktion, Content management"
+        worked:"few of the Course: Bild & grafisk produktion, Content management, Tekniker för webbdesign "
     },
     {
         title:"Högskolan dalarna (University) Grafisk design",
