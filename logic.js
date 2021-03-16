@@ -44,7 +44,7 @@ const boxlist = [
     {
         image:"group.png",
         hobby:"Github project - F4B",
-        Desc: "This is the third group project I'm currenly working on with other fellow students, stay tune for more infromation!,Tekniker för webbdesign",
+        Desc: "This is the third group project I'm currenly working on with other fellow students, stay tune for more infromation!",
         page: "github",
         link: "https://github.com/FredrikLjungqvist/F4B"
     },
@@ -91,7 +91,7 @@ const boxlist = [
     },{
         image:"profilprogramet.PNG",
         hobby:"Grapich Design",
-        Desc:"Since my school year of gymnasiet (Similary to sweden high school) I've purse graphic design in university level yet I droped out since I kinde felt it wasn't the career path I was looking for it still remained as an important tool for every future project i approuch",
+        Desc:"Since my school year of gymnasiet (Similary to sweden high school) I've purse graphic design in university level yet I droped out since I kinde felt it wasn't the career path I was looking for it still remained as an important tool for every future project i approach",
        
     },{
         image:"group.png",
