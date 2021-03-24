@@ -247,7 +247,7 @@ function renderPfpCard(){
 
     let image = document.createElement("img")
     image.id = "image"
-    image.src="assets/profilepicture.jpg"
+    image.src="assets/niklas-pfp-#2.jpg"
 
     let stylebox = document.createElement("div")
     stylebox.className ="stylebox"
