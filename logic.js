@@ -42,7 +42,7 @@ const aboutMe = [
 
 const boxlist = [
     {
-        image:"qiz-logga-big.png",
+        image:"qizloggastor.png",
         hobby:"Github project - Quiz It Iz (Quiz app)",
         Desc: "Group project focus with agile, scrum method.",
         page: "github",
@@ -247,7 +247,7 @@ function renderPfpCard(){
 
     let image = document.createElement("img")
     image.id = "image"
-    image.src="assets/niklas-pfp-#2.jpg"
+    image.src="assets/websitepfp.png"
 
     let stylebox = document.createElement("div")
     stylebox.className ="stylebox"
