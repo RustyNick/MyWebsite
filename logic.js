@@ -42,7 +42,7 @@ const aboutMe = [
 
 const boxlist = [
     {
-        image:"qiz-logga.png",
+        image:"qiz-logga-big.png",
         hobby:"Github project - Quiz It Iz (Quiz app)",
         Desc: "Group project focus with agile, scrum method.",
         page: "github",
