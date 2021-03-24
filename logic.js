@@ -42,7 +42,14 @@ const aboutMe = [
 
 const boxlist = [
     {
-        image:"group.png",
+        image:"qiz-logga.png",
+        hobby:"Github project - Quiz It Iz (Quiz app)",
+        Desc: "Group project focus with agile, scrum method.",
+        page: "github",
+        link: "https://github.com/TokJocke/quiz-app"
+    },
+    {
+        image:"f4b.png",
         hobby:"Github project - F4B",
         Desc: "This is the third group project I'm currenly working on with other fellow students, stay tune for more infromation!",
         page: "github",
@@ -117,22 +124,6 @@ const contactlist = [
         link: "https://www.linkedin.com/in/niklas-hådell-51b767201"
     },
     {
-        medie:"Whisper me on twitch",
-        contact:"whisper in twitch",
-        desc:"",
-        link:"https://www.twitch.tv/jakkenblue"
-    },
-    {
-        medie:"DM me on Twitter",
-        contact:"DM me on Twitter",
-        desc:"",
-        link:"https://twitter.com/JakkenBlue"
-    },{
-        medie:"Join our discord",
-        contact:"Join our Discord",
-        desc:"",
-        link:"https://discord.com/invite/zRx28HY7vH"
-    },{
         medie:"My GitHub",
         contact:"My GitHub",
         desc:"",
