@@ -42,6 +42,13 @@ const aboutMe = [
 
 const boxlist = [
     {
+        image:"blomsterslanten.png",
+        hobby:"Github project - Blomsterslanten",
+        Desc: "Group project focus with wordpress and woocommerce, Logo made by Tim",
+        page: "github",
+        link: "https://github.com/Tim-bitz/slant"
+    },
+    {
         image:"qizloggastor.png",
         hobby:"Github project - Quiz It Iz (Quiz app)",
         Desc: "Group project focus with agile, scrum method.",
@@ -51,7 +58,7 @@ const boxlist = [
     {
         image:"f4b.png",
         hobby:"Github project - F4B",
-        Desc: "This is the third group project I'm currenly working on with other fellow students, stay tune for more infromation!",
+        Desc: "This is the third group project I'm currenly working on with other fellow students, stay tune for more infromation! Logo made by Linda",
         page: "github",
         link: "https://github.com/FredrikLjungqvist/F4B"
     },

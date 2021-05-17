@@ -2,10 +2,5 @@
         "name": "Niklas",
         "description": "I'm a student learning to make websites go boop beep boop",
         "image": "ICON.PNG"
-    },
-    {
-        "title": "One Plus 5",
-        "description": "Sleek and powerful smartphone from One Plus.",
-        "image": "OnePlus5.png",
-        "price": 4995
-    }]
+    }
+]
